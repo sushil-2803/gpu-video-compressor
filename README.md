@@ -43,7 +43,7 @@ git clone https://github.com/<your-username>/gpu-video-compressor.git
 cd gpu-video-compressor
 ```
 
-2. Install Python Dependencies
+### 2. Install Python Dependencies
 
 Make sure you have Python 3.8+ installed.
 ```bash
@@ -52,7 +52,7 @@ pip install tk
 
 💡 Tkinter is usually included with Python. If not, install via sudo apt install python3-tk (Linux).
 
-3. Install FFmpeg
+### 3. Install FFmpeg
 🪟 Windows
 
 Download and install from Gyan.dev FFmpeg builds
@@ -66,7 +66,7 @@ sudo apt install ffmpeg
 🍎 macOS
 brew install ffmpeg
 
-4. Verify FFmpeg
+### 4. Verify FFmpeg
 
 Run this in your terminal:
 
@@ -75,7 +75,7 @@ ffmpeg -version
 
 If you see FFmpeg details, setup is correct.
 
-5. GPU Requirements
+### 5. GPU Requirements
 
 Depending on your GPU vendor:
 
@@ -86,25 +86,25 @@ Intel	h264_qsv, hevc_qsv	Intel QuickSync-enabled CPU (driver required)
 
 ⚠️ If GPU encoding fails, FFmpeg will show “encoder not found.” Check driver installation or switch codec.
 
-▶️ Usage
+## ▶️ Usage
 
 Run the app:
-
+```bash
 python video_compressor.py
-
+```
 
 You’ll see the GUI window appear.
 Steps:
 
-Click Select Videos → pick one or more videos.
+- Click Select Videos → pick one or more videos.
 
-(Optional) Click Select Output Folder → choose where to save results.
+- (Optional) Click Select Output Folder → choose where to save results.
 
-Choose codec (H.264 or H.265).
+- Choose codec (H.264 or H.265).
 
-Enter target bitrate (e.g., 1000k for good balance).
+- Enter target bitrate (e.g., 1000k for good balance).
 
-Click Compress Videos.
+- Click Compress Videos.
 
 All output videos are saved in your chosen folder, or automatically under Output/ in the source directory.
 
