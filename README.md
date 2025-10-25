@@ -55,23 +55,24 @@ pip install tk
 ### 3. Install FFmpeg
 🪟 Windows
 
-Download and install from Gyan.dev FFmpeg builds
-.
+Download and install from Gyan.dev FFmpeg builds.
 After extracting, add the bin/ folder to your system PATH so ffmpeg is recognized globally.
 
 🐧 Linux
-sudo apt update
+```bash sudo apt update
 sudo apt install ffmpeg
-
+```
 🍎 macOS
+```bash 
 brew install ffmpeg
+```
 
 ### 4. Verify FFmpeg
 
 Run this in your terminal:
-
+```bash
 ffmpeg -version
-
+```
 
 If you see FFmpeg details, setup is correct.
 
@@ -79,10 +80,12 @@ If you see FFmpeg details, setup is correct.
 
 Depending on your GPU vendor:
 
-GPU	Encoder Used	Requirements
-NVIDIA	h264_nvenc, hevc_nvenc	Latest NVIDIA drivers & CUDA support
-AMD	h264_amf	AMD Adrenalin driver (Windows only)
-Intel	h264_qsv, hevc_qsv	Intel QuickSync-enabled CPU (driver required)
+| GPU    | Encoder Used               | Requirements                                  |
+| ------ | -------------------------- | --------------------------------------------- |
+| NVIDIA | `h264_nvenc`, `hevc_nvenc` | Latest NVIDIA drivers & CUDA support          |
+| AMD    | `h264_amf`                 | AMD Adrenalin driver (Windows only)           |
+| Intel  | `h264_qsv`, `hevc_qsv`     | Intel QuickSync-enabled CPU (driver required) |
+
 
 ⚠️ If GPU encoding fails, FFmpeg will show “encoder not found.” Check driver installation or switch codec.
 
